@@ -12,4 +12,6 @@ public interface PaymentFeignService {
 
     @GetMapping("/payment/get/{id}")
     public CommonResult selectById(@PathVariable("id") Long id);
+
+    public CommonResult selectByIdHandler(@PathVariable("id") Long id);
 }
