@@ -1,0 +1,25 @@
+server:
+  port: 3344
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka
+
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jay13655670847/springcloud-config.git
+          search-paths:
+            - springcloud-config
+          skip-ssl-validation: true
+          username: jay13655670847
+          password: ljlmy625
+      label: main
+
