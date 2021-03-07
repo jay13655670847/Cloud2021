@@ -7,7 +7,7 @@ spring:
   cloud:
     alibaba:
       seata:
-        tx-service-group: my_test_tx_group #查看seata中config.txt
+        tx-service-group: seata-order-service-group #查看seata中config.txt
     nacos:
       discovery:
         server-addr: 116.62.14.29:80
