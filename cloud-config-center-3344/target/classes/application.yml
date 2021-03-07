@@ -22,4 +22,15 @@ spring:
           username: jay13655670847
           password: ljlmy625
       label: main
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
