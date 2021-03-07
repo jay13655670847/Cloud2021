@@ -1,0 +1,23 @@
+server:
+  port: 9004
+
+spring:
+  application:
+    name: nacos-payment-abc
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 116.62.14.29:80 #配置Nacos地址
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+
+
+
+
+

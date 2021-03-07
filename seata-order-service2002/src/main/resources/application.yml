@@ -1,0 +1,30 @@
+server:
+  port: 2002
+
+spring:
+  application:
+    name: seata-storage-service
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: seata-storage-service-group
+    nacos:
+      discovery:
+        server-addr: 116.62.14.29:80
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://116.62.14.29:3306/seata_storage
+    username: root
+    password: root
+
+  main:
+    allow-bean-definition-overriding: true #解决feign名称冲突
+
+logging:
+  level:
+    io:
+      seata: info
+
+
+
+
